@@ -1,0 +1,33 @@
+$color-dark-blue: rgb(45, 49, 77);
+$color-lime-green: rgb(49, 211, 92);
+$color-bright-cyan: rgb(43, 183, 218);
+
+$color-grayish-blue: rgb(150, 152, 166);
+$color-grayish-blue-light: rgb(243, 244, 246);
+$color-very-light-gray: rgb(250, 250, 250);
+$color-white: rgb(255, 255, 255);
+$font-family: 'Public Sans', sans-serif;
+
+*,
+*::after,
+*::before {
+  box-sizing: inherit;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%; // 1rem = 10px
+}
+
+body {
+  font-family: $font-family;
+  font-weight: 400;
+  line-height: 1.6;
+}
+
+.container {
+  // display: grid;
+  // grid-template-rows: 8rem 50vw repeat(3, min-content);
+}
