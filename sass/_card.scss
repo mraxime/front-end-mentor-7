@@ -1,0 +1,44 @@
+.why-us {
+  padding: 10rem 0;
+  background-color: $color-grayish-blue-light;
+  display: grid;
+  grid-template-columns: var(--default-grid);
+  & > * {
+    grid-column: 2 / 3;
+  }
+
+  // max-width: 112rem;
+  // width: 80vw;
+  // height: 8rem;
+  // margin: 0 auto;
+  &__text {
+    font-size: 1.8rem;
+    color: $color-grayish-blue;
+    margin: 4rem 0;
+  }
+}
+
+.cards-container {
+  display: grid;
+  gap: 3.5rem;
+  grid-template-columns: repeat(auto-fit, minmax(22rem, 1fr));
+}
+
+.card {
+  display: grid;
+  row-gap: 2.5rem;
+  &__logo {
+    width: 7.5rem;
+    height: 7.5rem;
+  }
+  &__heading {
+    font-size: 2rem;
+    font-weight: 300;
+    line-height: 1;
+    color: $color-dark-blue;
+  }
+  &__text {
+    font-size: 1.6rem;
+    color: $color-grayish-blue;
+  }
+}

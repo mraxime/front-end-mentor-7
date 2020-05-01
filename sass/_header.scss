@@ -2,14 +2,19 @@
 
 .navigation {
   &__container {
-    background-color: white;
     position: relative;
     z-index: 2;
+    display: grid;
+    background-color: $color-white;
+    grid-template-columns: minmax(8rem, 1fr) minmax(min-content, 112rem) minmax(
+        8rem,
+        1fr
+      );
+    & > * {
+      grid-column: 2 / 3;
+    }
   }
-  max-width: 112rem;
-  width: 80vw;
   height: 8rem;
-  margin: 0 auto;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -50,34 +55,31 @@
     background-color: $color-very-light-gray;
     background-image: url(../images/bg-intro-desktop.svg);
     background-repeat: no-repeat;
-    // background-size: cover;
     background-position-y: -30rem;
     background-position-x: 45vw;
     background-size: 90%;
     position: relative;
-    // overflow: hidden;
-    // padding: 3rem 0;
   }
-  max-width: 112rem;
-  width: 80vw;
-  height: calc(50vw - 8rem);
-  margin: 0 auto;
-  display: flex;
-  justify-content: space-between;
+  display: grid;
+  grid-template-columns: var(--default-grid);
+  grid-template-rows: minmax(5rem, 1fr) minmax(min-content, calc(50vw - 8rem)) minmax(
+      5rem,
+      1fr
+    );
+
   align-items: center;
   &__content {
+    grid-column: 2 / 3;
+    grid-row: 2 / 3;
     max-width: 45rem;
     display: grid;
     justify-items: start;
     gap: 3rem;
   }
-  &__pictures {
-    height: 100%;
-    width: 100%;
-  }
+
   &__img {
     width: auto;
-    height: 60vw;
+    height: 65vw;
     position: absolute;
     top: -12rem;
     right: -12rem;
