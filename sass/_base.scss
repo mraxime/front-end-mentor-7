@@ -22,16 +22,24 @@ $font-family: 'Public Sans', sans-serif;
 
 html {
   box-sizing: border-box;
-  font-size: 70.5%; // 1rem = 10px
+  font-size: 85%; // 1rem = 10px
+  @media only screen and (max-width: 1700px) {
+    font-size: 80%; // 1rem = 10px
+  }
+  @media only screen and (max-width: 1500px) {
+    font-size: 70%; // 1rem = 10px
+  }
+  @media only screen and (max-width: 1300px) {
+    font-size: 60%; // 1rem = 10px
+  }
+  @media only screen and (max-width: 1300px) {
+    font-size: 50%; // 1rem = 10px
+  }
 }
 
 body {
   font-family: $font-family;
   font-weight: 400;
   line-height: 1.6;
-}
-
-.container {
-  // display: grid;
-  // grid-template-rows: 8rem 50vw repeat(3, min-content);
+  overflow-x: hidden;
 }

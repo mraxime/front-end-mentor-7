@@ -37,7 +37,6 @@
       }
     }
   }
-
   &__link:link,
   &__link:visited {
     color: $color-grayish-blue;
@@ -53,24 +52,25 @@
 .header {
   &__container {
     background-color: $color-very-light-gray;
+    // background-size: cover;
     background-image: url(../images/bg-intro-desktop.svg);
     background-repeat: no-repeat;
-    background-position-y: -30rem;
-    background-position-x: 45vw;
+    background-position-y: -16vw;
+    background-position-x: 44vw;
     background-size: 90%;
+
     position: relative;
   }
+
+  padding: 5rem 0;
   display: grid;
   grid-template-columns: var(--default-grid);
-  grid-template-rows: minmax(5rem, 1fr) minmax(min-content, calc(50vw - 8rem)) minmax(
-      5rem,
-      1fr
-    );
-
+  grid-template-rows: minmax(min-content, calc(50vw - 8rem));
+  max-height: calc(90vh - 8rem);
   align-items: center;
+  align-content: center;
   &__content {
     grid-column: 2 / 3;
-    grid-row: 2 / 3;
     max-width: 45rem;
     display: grid;
     justify-items: start;
@@ -78,8 +78,10 @@
   }
 
   &__img {
-    width: auto;
+    // max-height: 1239px;
     height: 65vw;
+    width: auto;
+    max-height: calc(12rem + 95vh);
     position: absolute;
     top: -12rem;
     right: -12rem;
